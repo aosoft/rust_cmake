@@ -1,3 +1,7 @@
+use rust_cmake::sum;
+
 fn main() {
-    println!("Hello, world!");
+    unsafe {
+        println!("{}", sum(10, 10));
+    }
 }
